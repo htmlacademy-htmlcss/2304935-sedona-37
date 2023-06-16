@@ -19,11 +19,15 @@
   font-size: 22px;
   line-height: 26px;
   font-style: normal;
-  color:#000000;
-  background-color: #FFFFFF;
+  color:#333333;
+  background-color: #F2F2F2;
 
  }
-
+ .page-container{
+ box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+ width: 1200px;
+ background-color: #FFFFFF;
+}
 .navigation-link {
   font-weight: 700;
   font-size: 20px;
@@ -61,52 +65,81 @@
 
 .slogan,
 .invitation,
-.question,
-.subcribe-label{
+.question{
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  color:#000000
+}
+.subcribe-label{
+color:#FFFFFF;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
 }
 
-.advantages-title,
+.block-light-blue,
+.block-medium-blue,
 .recommendations-title
  {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  color:#000000;
 }
 
-.advantages-description,
-.recommendations-list {
+.gray {
   font-weight: 400;
 font-size: 18px;
 line-height: 21px;
+color:#333333;
 }
 
-.advantages-item:first-child,
-.advantages-item:last-child{
+.block-blue {
   color: #FFFFFF;
   background: #82B3D3;
+  font-weight: 700;
 }
 
-.advantages-item:nth-child(2),
-.advantages-item:nth-child(4),
-.recommendations-item:nth-child(1),
-.recommendations-item:nth-child(3)
-{
-background: rgba(131, 179, 211, 0.12)
+.block-light-color{
+background: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item:nth-child(3),{
-background: rgba(131, 179, 211, 0.2);
+.block-medium-color{
+ background: rgba(131, 179, 211, 0.2);
 }
 
+
+.advantages-item {
+color: #000000;
+}
+.advantages-item.block-blue{
+  color:#FFFFFF;
+}
+
+block.{
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 175px;
+  height: 56px;
+}
+.white{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
 .subcribe{
   background-repeat: no-repeat;
   background-size: 100% auto;
   color:#FFFFFF;
+  background-color:#000000;
   background-image: url("../images/background/background-sedona.jpg");
   text-align: center;
 
@@ -133,7 +166,6 @@ border-radius: 4px 0px 0px 4px;
   font-size: 20px;
   line-height: 36px;
 }
-
 
 .footer-contacts-address-phone{
   font-style: normal;
@@ -236,11 +268,11 @@ line-height: 23px;
 .select-control{
   font-size: 18px;
   line-height: 21px;
-  color:#333333;
   text-align: left;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   padding: 14px 20px;
+  color: inherit;
  }
 
 .product-card{
@@ -263,7 +295,6 @@ line-height: 23px;
 .product{
   font-size: 18px;
   line-height: 21px;
-  color:#333333;
   font-style: normal;
   font-weight: 400;
  }
@@ -294,7 +325,6 @@ line-height: 23px;
   color:#FFFFFF;
   padding: 8px 50px;
   text-decoration: none;
-  text-transform: uppercase;
   border-style: none;
   }
 
@@ -321,5 +351,15 @@ line-height: 23px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  color: #333333;
+  color:#333333;
+}
+
+.button-open-popup-hotel,
+.newsletter-button,
+.field,
+.button-submit,
+.button-reset,
+.select-control,
+.product-card-button-favorite{
+  font-family: inherit;
 }
