@@ -14,7 +14,20 @@
   font-display: swap;
  }
 
+ *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ html {
+  height: 100%;
+}
+
  body {
+  height: 100%;
+  margin: 0;
+
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -27,7 +40,39 @@
  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
  width: 1200px;
  background-color: #FFFFFF;
+ margin: 0 auto;
+ min-height: 100%;
+ display: flex;
+ flex-direction: column;
 }
+.page-header{
+  width: 1200px;
+padding: 0 40px;
+display:flex;
+margin: 0;
+}
+
+.page-header-logo{
+width:140px;
+margin-right:28px;
+}
+
+.navigation-list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 460px;
+}
+.navigation-item{
+padding: 20px 16px;
+text-align: center;
+}
+
+.navigation-user {
+  width: 310px;
+  margin-left: auto;
+}
+
 .navigation-link {
   font-weight: 700;
   font-size: 20px;
@@ -37,6 +82,13 @@
   background-color: inherit;
   text-decoration: none;
  }
+
+ .navigation-link img,
+ .navigation-logo{
+  display: block;
+  margin:0 auto;
+ }
+
  .navigation-list,
  .recommendations-list,
  .footer-social-list,
@@ -61,6 +113,27 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
   text-align: center;
+}
+.main-container{
+  flex-grow: 1;
+}
+.hero-container{
+  margin: 0;
+  padding: 0;
+  height: 767px;
+}
+.welcome{
+  text-align: center;
+  margin-top: 51px;
+}
+.white-decoration{
+  margin-top: 25px;
+}
+
+.container-slogan{
+
+  margin: 69px 274px;
+  width: 620px;
 }
 
 .slogan,
@@ -111,15 +184,48 @@ background: rgba(131, 179, 211, 0.12);
 .block-medium-color{
  background: rgba(131, 179, 211, 0.2);
 }
+.invitation{
+margin:0 auto;
+margin-top: 40px;
+margin-bottom: 20px;
+}
 
+.recommendations-list{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
 
+.recommendations-item {
+  width: 400px;
+  padding: 81px 85px;
+}
 .advantages-item {
 color: #000000;
+padding: 102px 85px;
+width: 400px;
 }
 .advantages-item.block-blue{
   color:#FFFFFF;
 }
+.advantages-list{
+display: flex;
+width: 1200px;
+flex-wrap: wrap;
+padding: 0;
 
+}
+.advantages-list:first-child{
+  justify-content: start;
+}
+
+.advantages-list:last-child{
+  justify-content: end;
+}
+
+.hotel-search-sedona{
+margin: 96px 304px;
+}
 block.{
   font-size: 24px;
   line-height: 28px;
@@ -140,10 +246,14 @@ block.{
   background-size: 100% auto;
   color:#FFFFFF;
   background-color:#000000;
-  background-image: url("../images/background/background-sedona.jpg");
+  background-image: url("../images/background/background-subcribe.jpg");
   text-align: center;
-
 }
+.subcribe-main,
+.subcribe-inner{
+padding: 96px 258px 104px;
+}
+
 .subcribe-form{
 border-radius: 4px 0px 0px 4px;
 }
@@ -184,13 +294,15 @@ font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 20px;
-color:#000000;
+color:#FFFFFF;
+  max-height: 412px;
 }
+
 .inner-header-title{
 font-weight: 700;
 font-size: 60px;
 line-height: 78px;
-
+margin: 0;
 }
 
 .breadcrumbs-link{
@@ -209,12 +321,14 @@ list-style-type:none;
 }
 
 .catalog-products{
-  background-image: url(../images/background/background-sedona.jpg);
+  background-image: url(../images/background/background-filters.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
   font-size: 18px;
   line-height: 23px;
   color:#FFFFFF;
+  padding: 35px 70px 70px;
+  width:1060px;
 }
 
 .catalog-filter-title{
@@ -279,6 +393,8 @@ line-height: 23px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
   padding: 20px;
+   margin-bottom: 20px;
+   width: 340px;
  }
 
 .product-card-link{
@@ -362,4 +478,64 @@ line-height: 23px;
 .select-control,
 .product-card-button-favorite{
   font-family: inherit;
+}
+
+.page-footer{
+padding:40px 70px 30px;
+display: flex;
+margin: 0 auto;
+}
+
+.footer-social{
+width: 190px;
+margin-right: 41px;
+}
+
+.footer-contacts-address{
+  width: 332px;
+  margin-right: 235px;
+}
+.htmlacademy-link{
+ max-width: 116px;
+ margin-left: auto;
+}
+.catalog-products{
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 1200px;
+
+}
+.control-container{
+  display:flex;
+  width: 1060px;
+  margin: auto 40px;
+  align-content: flex-start;
+  justify-content: space-between;
+}
+
+.product-list{
+width:1060px;
+margin: 0 auto;
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.catalog-products fieldset{
+border: 0;
+display:flex;
+}
+.pagination{
+  display: flex;
+  width: 1060px;
+  margin: auto 70px;
+  align-content: flex-start;
+}
+.pagination-item{
+width: 60px;
+height: 60px;
+background: #82B3D3;
+margin: 0 8px;
 }
