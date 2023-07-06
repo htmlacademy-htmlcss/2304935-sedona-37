@@ -50,30 +50,38 @@
 padding: 0 40px;
 display:flex;
 margin: 0;
+flex-wrap: wrap
 }
 
 .page-header-logo{
 width:140px;
-margin-right:28px;
+margin-bottom:-6px;
+margin-right:30px;
 }
 
-.navigation-list{
+.navigation {
+width: 1200px;
+min-height: 64px;
+display: flex;
+margin:0 auto;
+}
+
+.navigation-list {
   display: flex;
   margin: 0;
   padding: 0;
   width: 460px;
-}
-.navigation-item{
-padding: 20px 16px;
-text-align: center;
+ flex-wrap: wrap;
 }
 
 .navigation-user {
   width: 310px;
-  margin-left: auto;
+  justify-content: flex-end;
 }
 
 .navigation-link {
+  padding: 20px 16px;
+  text-align: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -81,13 +89,17 @@ text-align: center;
   color:#000000;
   background-color: inherit;
   text-decoration: none;
- }
-
- .navigation-link img,
- .navigation-logo{
   display: block;
   margin:0 auto;
  }
+
+.icon{
+padding: 22px 12px;
+}
+.icon:last-child{
+  margin-right: 20px;
+}
+
 
  .navigation-list,
  .recommendations-list,
@@ -104,10 +116,16 @@ text-align: center;
   text-transform: uppercase;
   background: #756157;
   border-radius: 4px;
-  padding: 8px 50px;
+  min-height:52px;
   border-style: none;
+  margin:auto;
+  min-width: 376px;
+  padding:0;
 }
-
+.header-button{
+  min-height:36px;
+ min-width: 160px;
+}
 .main-index{
   background-image: url("../images/background/background-sedona.jpg");
   background-repeat: no-repeat;
@@ -117,23 +135,32 @@ text-align: center;
 .main-container{
   flex-grow: 1;
 }
+.main-inner:not:(:first-child){
+padding:70px 35px 70px 104px;
+}
 .hero-container{
   margin: 0;
   padding: 0;
-  height: 767px;
+  min-height: 767px;
 }
 .welcome{
   text-align: center;
   margin-top: 51px;
 }
 .white-decoration{
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .container-slogan{
-
-  margin: 69px 274px;
+  margin: 69px auto;
   width: 620px;
+}
+.slogan{
+margin:0;
+}
+.container-slogan p{
+margin:0;
+margin-top:25px;
 }
 
 .slogan,
@@ -151,6 +178,14 @@ font-weight: 700;
 font-size: 30px;
 line-height: 36px;
 text-transform: uppercase;
+margin:0;
+margin-bottom:20px}
+
+.subcribe-main p{
+margin:0;
+margin-bottom: 54px;
+margin-left: 105px;
+margin-right: 105px;
 }
 
 .block-light-blue,
@@ -184,26 +219,39 @@ background: rgba(131, 179, 211, 0.12);
 .block-medium-color{
  background: rgba(131, 179, 211, 0.2);
 }
+.suggestion{
+padding:64px 347.5px;
+}
+
 .invitation{
 margin:0 auto;
-margin-top: 40px;
-margin-bottom: 20px;
 }
 
 .recommendations-list{
   display: flex;
   justify-content: space-between;
   margin: 0;
+  padding:0;
 }
 
 .recommendations-item {
   width: 400px;
   padding: 81px 85px;
 }
+.
+.recommendations-title {
+  margin:0;
+  width: 230px;
+}
+.recommendations-item p{
+  margin: 0;
+}
+
 .advantages-item {
 color: #000000;
 padding: 102px 85px;
 width: 400px;
+height: 385px;
 }
 .advantages-item.block-blue{
   color:#FFFFFF;
@@ -213,7 +261,6 @@ display: flex;
 width: 1200px;
 flex-wrap: wrap;
 padding: 0;
-
 }
 .advantages-list:first-child{
   justify-content: start;
@@ -222,9 +269,27 @@ padding: 0;
 .advantages-list:last-child{
   justify-content: end;
 }
+.advantages-title{
+padding: 0 27.5px;
+padding-bottom: 62px;
+margin: 0;
+text-transform: uppercase;
+}
+.advantages-item p {
+  margin: 0;
+}
+.question{
+  margin:0;
+  margin-bottom:20px;
+}
+.hotel-search-sedona p {
+  margin:0;
+  margin-bottom:54px;
+}
 
 .hotel-search-sedona{
-margin: 96px 304px;
+padding: 96px 304px;
+min-height: 406px;
 }
 block.{
   font-size: 24px;
@@ -233,7 +298,7 @@ block.{
   font-weight: 700;
   text-transform: uppercase;
   width: 175px;
-  height: 56px;
+  min-height: 56px;
 }
 .white{
   font-weight: 400;
@@ -252,10 +317,12 @@ block.{
 .subcribe-main,
 .subcribe-inner{
 padding: 96px 258px 104px;
+min-height: 414.86px;
 }
 
 .subcribe-form{
 border-radius: 4px 0px 0px 4px;
+width: 684px;
 }
 
 .field,
@@ -286,16 +353,13 @@ border-radius: 4px 0px 0px 4px;
   line-height: 40px;
 }
 
-.visually-hidden{
-  display: none;
-}
 .inner-header{
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 20px;
 color:#FFFFFF;
-  max-height: 412px;
+padding-bottom: 8px;
 }
 
 .inner-header-title{
@@ -308,6 +372,13 @@ margin: 0;
 .breadcrumbs-link{
 font-size: 16px;
 line-height: 21px;
+margin-right:28px;
+}
+.breadcrumbs {
+display:flex;
+padding:0;
+margin:0;
+padding-bottom: 40px;
 }
 
 .breadcrumbs-item,
@@ -319,7 +390,14 @@ line-height: 21px;
 {
 list-style-type:none;
 }
-
+.product-description-item p{
+background-color: #F2F2F2;
+color:#333333;
+padding: 9px 22px 8px 23px;
+margin:0;
+min-width: 140px;
+min-height: 37px;
+}
 .catalog-products{
   background-image: url(../images/background/background-filters.jpg);
   background-repeat: no-repeat;
@@ -327,8 +405,9 @@ list-style-type:none;
   font-size: 18px;
   line-height: 23px;
   color:#FFFFFF;
-  padding: 35px 70px 70px;
   width:1060px;
+  flex-direction: column;
+  padding:35px 70px;
 }
 
 .catalog-filter-title{
@@ -336,18 +415,41 @@ font-weight: 700;
 font-size: 20px;
 line-height: 24px;
 text-transform: capitalize;
+margin-bottom: 32px;
+padding:0;
 }
 
 .catalog-filter-list{
 font-size: 18px;
 line-height: 23px;
+padding:0;
+margin:0;
 }
-
+.catalog-filter{
+  display: flex;
+ align-items: flex-start;
+}
+.catalog-filter-price{
+display:flex;
+flex-direction: column;
+margin:0 70px;
+padding:0;
+min-width: 288px;
+}
+.catalog-filter-group {
+  padding:0;
+  margin:0;
+  margin-right:70px;
+}
+.catalog-filter-item:not(:last-child){
+  margin-bottom: 16px;
+}
 .control-input-range{
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  color:#000000
+  color:#000000;
+  width:143px;
 }
 .button-submit{
   font-weight: 700;
@@ -359,6 +461,8 @@ line-height: 23px;
   color:#FFFFFF;
   border-style: none;
   text-transform: uppercase;
+  margin-bottom: 32px;
+
 }
 
 .button-reset{
@@ -370,8 +474,13 @@ line-height: 23px;
   border-style: none;
   color:#FFFFFF;
   padding: 8px 50px;
+margin-top:auto;
 }
-
+.container-button{
+  display: flex;
+  flex-direction: column;
+  padding-top:56px;
+}
 .total-found{
   font-weight: 700;
   font-size: 30px;
@@ -387,6 +496,7 @@ line-height: 23px;
   border-radius: 4px;
   padding: 14px 20px;
   color: inherit;
+  min-width: 292px;
  }
 
 .product-card{
@@ -445,11 +555,19 @@ line-height: 23px;
   }
 
 .pagination-link{
+  display:flex;
   font-style: normal;
   text-decoration: none;
   color:#FFFFFF;
   background: #82B3D3;
+  min-width: 60px;
+  height: 60px;
+  margin-right: 8px;
   border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  padding:0 12px;
+  box-sizing: border-box;
 }
 
 .subcribe-inner{
@@ -483,37 +601,54 @@ line-height: 23px;
 .page-footer{
 padding:40px 70px 30px;
 display: flex;
-margin: 0 auto;
+margin: 0;
+min-height: 120px;
+align-items: center;
 }
 
 .footer-social{
 width: 190px;
 margin-right: 41px;
+
+.footer-social-list{
+  display: flex;
+  justify-content: space-evenly;
+  padding:0;
+}
+}
+.footer-social-link{
+  display:block;
 }
 
 .footer-contacts-address{
-  width: 332px;
-  margin-right: 235px;
+ min-width:720px;
+ display:flex;
+ justify-content: space-around
 }
+
 .htmlacademy-link{
  max-width: 116px;
- margin-left: auto;
+ margin-left:auto;
 }
 .catalog-products{
   display:flex;
   justify-content: center;
   align-items: flex-start;
   width: 1200px;
-
+margin-bottom:50px;
 }
 .control-container{
   display:flex;
   width: 1060px;
-  margin: auto 40px;
+  margin: 0 70px 40px 70px;
   align-content: flex-start;
   justify-content: space-between;
+  align-items: baseline;
 }
+.view-location-list{
+display: flex;
 
+}
 .product-list{
 width:1060px;
 margin: 0 auto;
@@ -521,6 +656,7 @@ padding: 0;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
+margin-bottom:80px;
 }
 
 .catalog-products fieldset{
@@ -530,12 +666,24 @@ display:flex;
 .pagination{
   display: flex;
   width: 1060px;
-  margin: auto 70px;
-  align-content: flex-start;
+  margin: 0 70px 60px 70px;
+  flex-wrap: wrap;
 }
-.pagination-item{
-width: 60px;
-height: 60px;
-background: #82B3D3;
-margin: 0 8px;
+
+.pagination-item:last-child{
+  margin-right: 0;
+}
+.block-white{
+  color:#000000;
+  background-color: #FFFFFF;
+  }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
