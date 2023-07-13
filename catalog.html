@@ -108,10 +108,28 @@
     </fieldset>
     <fieldset class="catalog-filter-price">
       <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-      <input class="control-input-range" type="text" name="price-min" value="0">
-      <input class="control-input-range" type="text" name="price-max" value="9000">
-      <input class="control-range" type="range" id="volume" name="volume"
-         min="0" max="11000">
+<div class="range">
+  <div class="range-wrapper-inputs">
+    <label class="range-label">
+      <span class="cost-text">от</span>
+      <input class="control-input-range min-range" type="number" name="price-min" value="0">
+    </label>
+    <label class="range-label">
+    <span class="cost-text">до</span>
+      <input class="control-input-range max-range" type="number" name="price-max" value="9000">
+    </label>
+  </div>
+    <div class="range-scale">
+      <div class="range-bar" style="left: 0; width: 226px;">
+        <button class="button-range range-min" type="button" tabindex="0">
+          <span class="visually-hidden">Выбор нижней границы суммы</span>
+        </button>
+        <button class="button-range range-max" type="button" tabindex="0">
+          <span class="visually-hidden">Выбор верхний границы суммы</span>
+        </button>
+    </div>
+ </div>
+</div>
     </fieldset>
     <div class="container-button">
       <button class="button-submit" type="submit">Применить</button>
