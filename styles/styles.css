@@ -718,7 +718,8 @@ background-color: transparent;
 }
 .select-control:disabled{
   border: 2px solid  rgba(0, 0, 0, 0.30);
-  color:rgba(0, 0, 0, 0.30);
+  color:#000000;
+  opacity:0.3;
 }
 
 .product-card{
