@@ -23,8 +23,8 @@
             О Cедоне
         </a>
       </li>
-      <li class="navigation-item">
-          <a class="navigation-link selected-element">
+      <li class="navigation-item selected-element wide">
+          <a class="navigation-link">
               Гостиницы
           </a>
       </li>
@@ -60,12 +60,12 @@
     </li>
   </ol>
 </header>
-    <h2 class="visually-hidden">Список жилья с фильтрами</h2>
+    <h2 class="visually-hidden" >Список жилья с фильтрами</h2>
     <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
       <fieldset class="catalog-filter-group">
         <legend class="catalog-filter-title">Инфраструктура:</legend>
 
-      <ul class="catalog-filter-list">
+      <ul class="catalog-filter-list" data-test="filter">
         <li class="catalog-filter-item">
           <label class="control">
             <input class="control-input" type="checkbox" name="swimming-pool" checked>
@@ -150,18 +150,18 @@
       <h2 class="visually-hidden"> Выбор показа отелей в каталоге.</h2>
       <ul class="view-location-list">
         <li class="view-location-item">
-      <button class="sorting-link-button sorting-link-active" type="button"><p class="visually-hidden">Показать карточки.</p></button>
+      <button class="sorting-link-button sorting-link-active" type="button"><span class="visually-hidden">Показать карточки.</span></button>
   </li>
     <li class="view-location-item">
-      <button class="sorting-link-button" type="button"><p class="visually-hidden">Показать карточки на весь экран.</p></button>
+      <button class="sorting-link-button" type="button"><span class="visually-hidden">Показать карточки на весь экран.</span></button>
   </li>
     <li class="view-location-item">
-      <button class="sorting-link-button" type="button"><p class="visually-hidden">Показать список.</p></button>
+      <button class="sorting-link-button" type="button"><span class="visually-hidden">Показать список.</span></button>
   </li>
   </ul>
   </div>
   </div>
-  <section class="hotel-list">
+  <section class="hotel-list" data-test="catalog">
     <ul class="product-list">
       <li class="product-card">
         <a class="product-card-link" href="#">
@@ -191,8 +191,6 @@
           </li>
         </ul>
         </li>
-
-
       <li class="product-card">
         <a class="product-card-link" href="#">
           <img class="product-card-image" src="images/hotels/hotel-2.jpg" width="300" height="212" alt="Восход солнца из-за гор с выходящей радугой.">
@@ -277,7 +275,6 @@
         </ul>
       </li>
      </ul>
-    </section>
      <ul class="pagination">
       <li class="pagination-item">
         <a class="pagination-link pagination-current">1</a>
@@ -300,7 +297,7 @@
     </ul>
   </section>
   <section class="subcribe">
-    <div class="subcribe-inner">
+    <div class="subcribe-inner" data-test="footer">
     <h2><label for="newsletter-email">Подпишитесь на рассылку</label></h2>
      <p class="subcribe-slogan">Только полезная информация и никакого спама, честное&nbsp;бойскаутское!</p>
        <form class="subcribe-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -337,7 +334,6 @@
        </a>
      </li>
    </ul>
-  </section>
    <address class="footer-contacts-address">
      <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
    </address>
