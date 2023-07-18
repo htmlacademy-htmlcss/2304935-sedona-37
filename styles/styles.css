@@ -164,9 +164,6 @@ height: 100%;
   transform: translateX(-50%);
  }
 
- .navigation-inner{
-margin-left:3px;
- }
 .button-open-popup-hotel{
   font-weight: 700;
   font-size: 20px;
@@ -218,7 +215,7 @@ padding:70px 35px 70px 104px;
   padding: 0;
   height: 485px;
   bottom: 51px;
-  margin-bottom: 17px;
+  margin-bottom: -51px;
 };
 .hero-container img{
   position: absolute;
@@ -235,6 +232,7 @@ padding:70px 35px 70px 104px;
   margin: 0;
   width: 1200px;
   padding: 0 270px 90px 270px;
+  padding-top: 69px;
 }
 .slogan{
 margin:0;
@@ -586,7 +584,7 @@ text-transform: uppercase;
   flex-direction: column;
   padding:0 69px;
   background-color: #000;
-  min-height: 412px;
+  min-height: 410px;
   padding-top: 35px;
   margin-bottom: 42px;
 }
@@ -596,7 +594,7 @@ font-weight: 700;
 font-size: 20px;
 line-height: 24px;
 text-transform: capitalize;
-margin-bottom: 32px;
+margin-bottom: 31px;
 padding:0;
 }
 
@@ -626,8 +624,13 @@ min-width: 288px;
   margin-right:70px;
 }
 .catalog-filter-item:not(:last-child){
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
+
+.catalog-section:{
+  margin-top: 50px;
+}
+
 .control-input-range{
   font: inherit;
   font-weight: 700;
@@ -978,7 +981,7 @@ line-height: 36px;
 }
 
 .page-footer{
-padding:40px 70px 30px;
+  padding: 43px 70px 32px;
 display: flex;
 margin: 0;
 min-height: 120px;
@@ -1068,8 +1071,7 @@ width:1060px;
 margin: 0 70px;
 padding: 0;
 display: grid;
-margin-bottom:40px;
-padding-bottom:40px;
+margin-bottom: 73px;
 grid-template-columns: repeat(3,340px);
 gap:20px;
 border-bottom:1px solid #E6E6E6;
@@ -1636,24 +1638,24 @@ background: #68A2CA;
     }
 
     .rating_4 {
-      width: 72px;
+      width: 90px;
       height: 37px;
-      background-image: url(../images/svg/visual-effect/icon/star.svg);
+      background-image: url(../images/svg/visual-effect/icon/stars.svg);
       background-repeat: repeat-x;
       background-position: left center;
     }
 
     .rating_3 {
-      width: 54px;;
+      width: 72px;;
       height: 37px;
-      background-image: url(../images/svg/visual-effect/icon/star.svg);
+      background-image: url(../images/svg/visual-effect/icon/stars.svg);
       background-repeat: repeat-x;
       background-position: left center;
     }
     .rating_2 {
-      width: 36px;
+      width: 48px;
       height: 37px;
-      background-image: url(../images/svg/visual-effect/icon/star.svg);
+      background-image: url(../images/svg/visual-effect/icon/stars.svg);
       background-repeat: repeat-x;
       background-position: left center;
     }
