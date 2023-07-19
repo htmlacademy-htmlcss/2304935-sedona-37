@@ -145,9 +145,11 @@ height: 100%;
   justify-self: center;
  }
 
-  .navigation-item {
+  .navigation-item,
+  .navigation-item.selected-element.wide{
     position: relative;
     height:100%;
+    cursor: pointer;
  }
  .user-link:nth-child(1) {
   justify-self: start;
